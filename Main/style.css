@@ -573,4 +573,24 @@ footer .footer_block2_all .footer_block2_social {
   display: flex;
   flex-direction: row;
   gap: 0.5vw;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+  }
+  .main1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main1 .main1_all .main1_text .main1_p1 {
+    font-size: 1.625rem;
+  }
+  .main1 .main1_all .main1_text .main1_p4 .main1_p4_none {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

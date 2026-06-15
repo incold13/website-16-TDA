@@ -23,29 +23,33 @@ const main1 = document.querySelector('#main1');
 main1.innerHTML = newsArr.map((item) => {
    return `
       <div class="main1_all">
-         <div class="main1_text">
-            <div class="main1_links">
-               ${item.links.map((link, index) => {
-                  return `
-                     <p class="${index === 2 ? 'main1_link3' : 'main1_link'}">${link}</p>
-                     ${index !== 2 ? '<p class="main1_link_line">|</p>' : ''}
-                  `;
-               }).join('')}
+         <div class="main1_block1">
+            <div class="main1_text">
+               <div class="main1_links">
+                  ${item.links.map((link, index) => {
+                     return `
+                        <p class="${index === 2 ? 'main1_link3' : 'main1_link'}">${link}</p>
+                        ${index !== 2 ? '<p class="main1_link_line">|</p>' : ''}
+                     `;
+                  }).join('')}
+               </div>
+               <p class="main1_p1">${item.title}</p>
+               <div class="main1_info">
+                  <p class="main1_p2">${item.tag}</p>
+                  <p class="main1_p3">${item.date}</p>
+               </div>
+               <p class="main1_p4">${item.text1}</p>
             </div>
-            <p class="main1_p1">${item.title}</p>
-            <div class="main1_info">
-               <p class="main1_p2">${item.tag}</p>
-               <p class="main1_p3">${item.date}</p>
+            <div class="main1_img">
+               <img class="main1_img1" src="${item.img}" alt="">
             </div>
-            <p class="main1_p4">${item.text1}</p>
          </div>
-         <div class="main1_img">
-            <img class="main1_img1" src="${item.img}" alt="">
+         <div class="main1_block2">
+            <div class="main1_img_block">
+               <img class="main1_img2" src="${item.img}" alt="">
+            </div>
+            <p class="main1_p5">${item.text2}</p>
          </div>
-         <div class="main1_img_block">
-            <img class="main1_img2" src="${item.img}" alt="">
-         </div>
-         <p class="main1_p5">${item.text2}</p>
          <p class="main1_p6">${item.text3}</p>
          <div class="main1_button">
             <button class="main1_button1">${item.buttons[0]}</button>

@@ -23,6 +23,12 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
+header nav .main1_logo {
+  cursor: pointer;
+}
+header nav .main1_icons_2_4 {
+  display: none;
+}
 header nav .block_search {
   display: flex;
   width: 17vw;
@@ -44,6 +50,12 @@ header nav .block_search .header_block1 {
   align-items: center;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+header nav .block_search .header_block1:hover {
+  box-shadow: 0px 4px 50px -8px rgb(130, 186, 1);
+  transform: scale(1.02);
 }
 header nav .header_block2 {
   display: flex;
@@ -90,6 +102,7 @@ header nav .header_block7 {
   gap: 0.7vw;
   box-shadow: 0px 20px 50px -8px rgba(65, 14, 106, 0.35);
   cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 header nav .header_block7 hr {
   height: 3vh;
@@ -97,6 +110,10 @@ header nav .header_block7 hr {
 header nav .header_block7 p {
   font-size: 0.9375rem;
   color: #FFFFFF;
+}
+header nav .header_block7:hover {
+  box-shadow: 0px 4px 50px -8px rgb(65, 14, 106);
+  transform: scale(1.02);
 }
 header .header2 {
   display: flex;
@@ -118,6 +135,7 @@ header .header2 .header2_button {
   border: 0;
   border-radius: 6px;
   cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 header .header2 .header2_button hr {
   height: 3vh;
@@ -125,6 +143,10 @@ header .header2 .header2_button hr {
 header .header2 .header2_button p {
   font-size: 0.9375rem;
   color: #FFFFFF;
+}
+header .header2 .header2_button:hover {
+  box-shadow: 0px 4px 50px -8px rgba(65, 14, 106, 0.5);
+  transform: scale(1.01);
 }
 header .header2 ul {
   display: flex;
@@ -138,42 +160,10 @@ header .header2 ul a {
   list-style: none;
   font-size: 1.125rem;
   color: #272727;
+  transition: transform 0.2s ease;
 }
-
-.header_sliders {
-  width: 100vw;
-  height: 13vh;
-  display: flex;
-  flex-wrap: nowrap;
-}
-.header_sliders .header_sliders_all {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 16vh;
-}
-.header_sliders .header_sliders_all .header_sliders_gap {
-  display: flex;
-  gap: 0.9vw;
-}
-.header_sliders .header_sliders_all .header_sliders_arrow {
-  position: relative;
-  width: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 60vw;
-  bottom: 85px;
-}
-.header_sliders .header_sliders_all .header_sliders_arrow img {
-  width: 40px;
-  height: 40px;
-}
-.header_sliders .header_sliders_all img {
-  width: 186px;
-  height: 140px;
-  box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+header .header2 ul a:hover {
+  transform: scale(1.03);
 }
 
 .main1 {

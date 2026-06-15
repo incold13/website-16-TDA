@@ -21,6 +21,12 @@ header {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      .main1_logo {
+         cursor: pointer;
+      }
+      .main1_icons_2_4 {
+         display: none;
+      }
         .block_search {
             display: flex;
             width: 17vw;
@@ -41,6 +47,12 @@ header {
                 align-items: center;
                 border-top-right-radius: 6px;
                 border-bottom-right-radius: 6px;
+                cursor: pointer;
+                transition: box-shadow 0.3s ease, transform 0.3s ease;
+            }
+            .header_block1:hover {
+               box-shadow: 0px 4px 50px -8px rgba(130, 186, 1, 1); 
+               transform: scale(1.02); 
             }
         }
         .header_block2 {
@@ -88,6 +100,7 @@ header {
             gap: 0.7vw;
             box-shadow: 0px 20px 50px -8px rgba(65, 14, 106, 0.35);
             cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
             hr {
                 height: 3vh;
             }
@@ -95,6 +108,10 @@ header {
                 font-size: 0.9375rem;
                 color: #FFFFFF;
             }
+        }
+        .header_block7:hover {
+            box-shadow: 0px 4px 50px -8px rgba(65, 14, 106, 1); 
+            transform: scale(1.02); 
         }
     }
     .header2 {
@@ -116,6 +133,7 @@ header {
             border: 0;
             border-radius: 6px;
             cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
             hr {
                 height: 3vh;
             }
@@ -123,6 +141,10 @@ header {
                 font-size: 0.9375rem;
                 color: #FFFFFF;
             }
+        }
+        .header2_button:hover {
+            box-shadow: 0px 4px 50px -8px rgba(65, 14, 106, 0.5); 
+            transform: scale(1.01); 
         }
         ul {
             display: flex;
@@ -135,42 +157,11 @@ header {
                 list-style: none;
                 font-size: 1.125rem;
                 color: #272727;
+                transition: transform 0.2s ease;
             }
-        }
-    }
-}
-.header_sliders {
-    width: 100vw;
-    height: 13vh;
-    display: flex;
-    flex-wrap: nowrap;
-    .header_sliders_all {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100vw;
-        height: 16vh;
-        .header_sliders_gap {
-         display: flex;
-         gap: 0.9vw;
-        }
-        .header_sliders_arrow {
-            position: relative;
-            width: 80vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 60vw;
-            bottom: 85px;
-            img {
-                width: 40px;
-                height: 40px;
+            a:hover {
+               transform: scale(1.03);
             }
-        }
-        img {
-            width: 186px;
-            height: 140px;
-            box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
         }
     }
 }

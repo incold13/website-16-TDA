@@ -64,3 +64,61 @@ document.addEventListener("mousemove", (e) => {
 });
 
 
+const headerSlidersArr = [
+   './assets/Frame 1.png',
+   './assets/Frame 2.png',
+   './assets/Frame 3.png',
+   './assets/Frame 4.png',
+   './assets/Frame 5.png',
+   './assets/Frame 6.png',
+   './assets/Frame 7.png',
+   './assets/Frame 8.png',
+   './assets/Frame 9.png',
+   './assets/Frame 10.png'
+];
+
+const headerSlidersGap = document.querySelector('#headerSlidersGap');
+const headerSliderLeft = document.querySelector('#headerSliderLeft');
+const headerSliderRight = document.querySelector('#headerSliderRight');
+
+function headerSliderCard(img) {
+   return `
+      <div class="header_sliders_card">
+         <img class="header_sliders_img" src="${img}" alt="">
+
+         <div class="header_sliders_text">
+            <p class="header_sliders_p1">Кетчуп «Томатный<br>„Кубаночка“ 310 г.<br>дойпак 1/20</p>
+            <p class="header_sliders_p2">55,90 ₽</p>
+
+            <div class="header_sliders_price">
+               <p class="header_sliders_p3">42,30 ₽</p>
+               <img class="header_sliders_basket" src="./assets/main1_icons_1.svg" alt="">
+            </div>
+         </div>
+      </div>
+   `;
+}
+
+headerSlidersGap.innerHTML = headerSlidersArr.map(headerSliderCard).join('');
+
+headerSliderRight.onclick = () => {
+   headerSlidersGap.style.transition = 'transform 0.7s ease';
+   headerSlidersGap.style.transform = 'translateX(-202px)';
+
+   setTimeout(() => {
+      headerSlidersGap.append(headerSlidersGap.firstElementChild);
+      headerSlidersGap.style.transition = 'none';
+      headerSlidersGap.style.transform = 'translateX(0)';
+   }, 500);
+};
+
+headerSliderLeft.onclick = () => {
+   headerSlidersGap.style.transition = 'none';
+   headerSlidersGap.prepend(headerSlidersGap.lastElementChild);
+   headerSlidersGap.style.transform = 'translateX(-202px)';
+
+   setTimeout(() => {
+      headerSlidersGap.style.transition = 'transform 0.7s ease';
+      headerSlidersGap.style.transform = 'translateX(0)';
+   }, 20);
+};

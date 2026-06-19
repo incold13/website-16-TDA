@@ -20,13 +20,13 @@ const main1Products = document.querySelector('#main1Products');
 
 main1Products.innerHTML = main1ProductsArr.map((img, index) => {
    return `
-      <div class="main1_card">
+      <a href = "../Product Card/index.html"><div class="main1_card">
          <div class="main1_card_top">
             <div class="main1_sale"><p>-40%</p></div>
             <div class="main1_new_label"><p>Новинка</p></div>
             <div class="main1_hit"><p>Хит</p></div>
             <img class="main1_card_img" src="${img}" alt="">
-         </div>
+         </div></a>
 
          <div class="main1_card_text">
             <p class="main1_card_p1">Морковь мытая 0.7-1.0 кг</p>

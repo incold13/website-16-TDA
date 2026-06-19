@@ -66,7 +66,7 @@ const main1Cards = document.querySelector('#main1Cards');
 main1Cards.innerHTML = main1Arr.map((item) => {
    return `
       <div class="main1_card">
-         <img class="main1_card_img" src="${item.img}" alt="">
+         <a href = "../Text Page/index.html"><img class="main1_card_img" src="${item.img}" alt=""></a>
 
          <div class="main1_card_text">
             <p class="main1_card_p1">${item.date}</p>

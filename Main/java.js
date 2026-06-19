@@ -1,3 +1,31 @@
+let catalog = document.getElementById('katalogoff');
+let catalog_butt = document.getElementById('catalog');
+let catalog_stat = false;
+
+let img1 = document.getElementById('cartinka')
+let img2 = document.getElementById('cartinka2')
+
+let catalogImages = catalog_butt.querySelectorAll('img.list');
+
+catalog_butt.addEventListener('click', () => {
+    
+    catalog_stat = !catalog_stat;
+
+    if (catalog_stat) {
+        catalog.style.display = "flex";
+        img1.style.display = 'none'
+        img2.style.display = 'flex'
+    } else {
+        catalog.style.display = "none";
+        img2.style.display = 'none'
+        img1.style.display = 'flex'
+    }
+
+    catalogImages.forEach(img => {
+        img.classList.toggle('active');
+    });
+});
+
 let product = document.getElementById("mainProduct");
 let btn1 = document.getElementById("changeProduct1");
 let btn2 = document.getElementById("changeProduct2");

@@ -168,6 +168,169 @@ header {
         }
     }
 }
+.katalog_off{
+    width: 100%;
+    height: 80vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    .center{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .left_menu{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .add{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                div{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;  
+
+                    .menu_item_active{
+                        color: var(--purple);
+                        font-family: "inter-regular";
+                        font-weight: bold;
+                        font-size: 16px;
+                        text-decoration: none; 
+                    }
+
+                    .menu_item{
+                        color: var(--text-black);
+                        font-family: "inter-regular";
+                        font-weight: bold;
+                        font-size: 16px;
+                        text-decoration: none; 
+                    }
+
+                    
+                }
+                
+            }
+
+            .palka{
+                width: 1px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .active_palka{
+                    width: 300%;
+                    height: 20%;
+                    background: var(--green);
+                    border-radius: 100px;
+                    cursor: pointer;
+
+                }
+
+                .prosto{
+                    width: 100%;
+                    height: 80%;
+                    background: var(--text-gray);
+                }
+            }
+        }
+
+        .right{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .center_right{
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                h1{
+                    color: var(--text-black);
+                    font-family: "inter-regular";
+                    font-weight: bold;
+                    font-size: 36px;
+                    text-decoration: none; 
+                }
+
+                .pervie{
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .first{
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        h2{
+                            cursor: pointer;
+                            color: var(--text-black);
+                            font-family: "inter-regular";
+                            font-weight: bold;
+                            font-size: 16px;
+                            text-decoration: none; 
+                            margin-bottom: 5%;
+                        }
+
+                        .napolnenie{
+                            width: 100%;
+                            height: min-content;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+
+                            p{
+                                cursor: pointer;
+                                color: var(--text-gray);
+                                font-family: "inter-regular";
+                                line-height: 25px;
+                                font-size: 16px;
+                                transition: 0.5s all ease;
+                            }
+
+                            p:hover{
+                                color: var(--text-black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .header_sliders {
    width: 100vw;
    height: 6.8vw;
@@ -2774,11 +2937,11 @@ footer {
 }
 .footer_table{
    width: 100vw;
-   height: 85vh;
+   height: 83vh;
    display: flex;
    align-items: center;
    flex-direction: column;
-   justify-content: end;
+   justify-content: start;
    background-color: #F9F9F9;
    .footer_block1_all_table {
       width: 90vw;
@@ -2929,17 +3092,17 @@ footer {
          color: #6701BA;
       }
    }
-   .footer_line_table_table {
+   .footer_line_table {
       width: 100vw;
    }
    .footer_block2_all_table {
-      width: 80vw;
+      width: 90vw;
       height: 18vh;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       gap: 4vh;
-      flex-direction: column-reverse;
+      flex-direction: row;
       .footer_block2_p1_table {
          color: #A8A8A8;
          font-size: 0.975rem;
@@ -2947,7 +3110,7 @@ footer {
       .footer_block2_social_table {
          display: flex;
          flex-direction: row;
-         gap: 2.5vw;
+         gap: 1.5vw;
       }
    }
    .footer_mobile {

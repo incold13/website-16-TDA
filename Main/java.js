@@ -1,29 +1,28 @@
-let catalog = document.getElementById('katalogoff');
-let catalog_butt = document.getElementById('catalog');
-let catalog_stat = false;
+let headerCatalog = document.getElementById('headerCatalog');
+let headerCatalogButton = document.getElementById('catalog');
+let headerCatalogStatus = false;
 
-let img1 = document.getElementById('cartinka')
-let img2 = document.getElementById('cartinka2')
+let headerCatalogImg1 = document.getElementById('cartinka');
+let headerCatalogImg2 = document.getElementById('cartinka2');
 
-let catalogImages = catalog_butt.querySelectorAll('img.list');
+let headerCatalogImages = headerCatalogButton.querySelectorAll('img.list');
 
-catalog_butt.addEventListener('click', () => {
-    
-    catalog_stat = !catalog_stat;
+headerCatalogButton.addEventListener('click', () => {
+   headerCatalogStatus = !headerCatalogStatus;
 
-    if (catalog_stat) {
-        catalog.style.display = "flex";
-        img1.style.display = 'none'
-        img2.style.display = 'flex'
-    } else {
-        catalog.style.display = "none";
-        img2.style.display = 'none'
-        img1.style.display = 'flex'
-    }
+   if (headerCatalogStatus) {
+      headerCatalog.style.display = 'flex';
+      headerCatalogImg1.style.display = 'none';
+      headerCatalogImg2.style.display = 'flex';
+   } else {
+      headerCatalog.style.display = 'none';
+      headerCatalogImg2.style.display = 'none';
+      headerCatalogImg1.style.display = 'flex';
+   }
 
-    catalogImages.forEach(img => {
-        img.classList.toggle('active');
-    });
+   headerCatalogImages.forEach((img) => {
+      img.classList.toggle('active');
+   });
 });
 
 let product = document.getElementById("mainProduct");

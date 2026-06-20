@@ -169,145 +169,139 @@ header .header2 ul a:hover {
   transform: scale(1.03);
 }
 
-.katalog_off {
-  width: 100%;
-  height: 80vh;
+.header_catalog {
+  width: 100vw;
+  height: 76vh;
   display: none;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.katalog_off .center {
-  width: 80%;
-  height: 80%;
+.header_catalog .header_catalog_all {
+  width: 67.2vw;
+  height: 82vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.katalog_off .center .left_menu {
-  width: 20%;
-  height: 100%;
+.header_catalog .header_catalog_all .header_catalog_left {
+  width: 14vw;
+  height: 72vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.katalog_off .center .left_menu .add {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.katalog_off .center .left_menu .add div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.katalog_off .center .left_menu .add div .menu_item_active {
-  color: var(--purple);
-  font-family: "inter-regular";
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
-}
-.katalog_off .center .left_menu .add div .menu_item {
-  color: var(--text-black);
-  font-family: "inter-regular";
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
-}
-.katalog_off .center .left_menu .palka {
-  width: 1px;
-  height: 100%;
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu {
+  width: 13vw;
+  height: 71vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.katalog_off .center .left_menu .palka .active_palka {
-  width: 300%;
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item {
+  width: 14vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item img {
+  width: 24px;
+  height: 24px;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item .header_catalog_link {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #272727;
+  text-decoration: none;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item .header_catalog_link_active {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #6701BA;
+  text-decoration: none;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_line {
+  width: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_line .header_catalog_line_active {
+  width: 3px;
   height: 20%;
-  background: var(--green);
+  background-color: #82BA01;
   border-radius: 100px;
   cursor: pointer;
 }
-.katalog_off .center .left_menu .palka .prosto {
-  width: 100%;
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_line .header_catalog_line_gray {
+  width: 1px;
   height: 80%;
-  background: var(--text-gray);
+  background-color: #A8A8A8;
 }
-.katalog_off .center .right {
-  width: 80%;
-  height: 100%;
+.header_catalog .header_catalog_all .header_catalog_right {
+  width: 51vw;
+  height: 72vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
-.katalog_off .center .right .center_right {
-  width: 90%;
-  height: 90%;
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content {
+  width: 48vw;
+  height: 63vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: start;
 }
-.katalog_off .center .right .center_right h1 {
-  color: var(--text-black);
-  font-family: "inter-regular";
-  font-weight: bold;
-  font-size: 36px;
-  text-decoration: none;
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #272727;
 }
-.katalog_off .center .right .center_right .pervie {
-  width: 100%;
-  height: 80%;
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns {
+  width: 50vw;
+  height: 55vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.katalog_off .center .right .center_right .pervie .first {
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column {
   width: 30%;
   height: 100%;
+  gap: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-.katalog_off .center .right .center_right .pervie .first h2 {
-  cursor: pointer;
-  color: var(--text-black);
-  font-family: "inter-regular";
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
-  margin-bottom: 5%;
-}
-.katalog_off .center .right .center_right .pervie .first .napolnenie {
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column .header_catalog_block {
   width: 100%;
-  height: -moz-min-content;
-  height: min-content;
+  gap: 1vh;
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-.katalog_off .center .right .center_right .pervie .first .napolnenie p {
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column .header_catalog_subtitle {
+  height: 3.5vh;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #272727;
   cursor: pointer;
-  color: var(--text-gray);
-  font-family: "inter-regular";
-  line-height: 25px;
-  font-size: 16px;
-  transition: 0.5s all ease;
 }
-.katalog_off .center .right .center_right .pervie .first .napolnenie p:hover {
-  color: var(--text-black);
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column .header_catalog_text {
+  font-size: 1.125rem;
+  color: #272727;
+  cursor: pointer;
 }
 
 .header_sliders {

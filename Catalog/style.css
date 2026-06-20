@@ -169,6 +169,141 @@ header .header2 ul a:hover {
   transform: scale(1.03);
 }
 
+.header_catalog {
+  width: 100vw;
+  height: 76vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.header_catalog .header_catalog_all {
+  width: 67.2vw;
+  height: 82vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left {
+  width: 14vw;
+  height: 72vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu {
+  width: 13vw;
+  height: 71vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item {
+  width: 14vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item img {
+  width: 24px;
+  height: 24px;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item .header_catalog_link {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #272727;
+  text-decoration: none;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_menu .header_catalog_menu_item .header_catalog_link_active {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #6701BA;
+  text-decoration: none;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_line {
+  width: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_line .header_catalog_line_active {
+  width: 3px;
+  height: 20%;
+  background-color: #82BA01;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.header_catalog .header_catalog_all .header_catalog_left .header_catalog_line .header_catalog_line_gray {
+  width: 1px;
+  height: 80%;
+  background-color: #A8A8A8;
+}
+.header_catalog .header_catalog_all .header_catalog_right {
+  width: 51vw;
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content {
+  width: 48vw;
+  height: 63vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #272727;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns {
+  width: 50vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column {
+  width: 30%;
+  height: 100%;
+  gap: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column .header_catalog_block {
+  width: 100%;
+  gap: 1vh;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column .header_catalog_subtitle {
+  height: 3.5vh;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #272727;
+  cursor: pointer;
+}
+.header_catalog .header_catalog_all .header_catalog_right .header_catalog_content .header_catalog_columns .header_catalog_column .header_catalog_text {
+  font-size: 1.125rem;
+  color: #272727;
+  cursor: pointer;
+}
+
 .catalog {
   width: 100vw;
   min-height: 100vh;

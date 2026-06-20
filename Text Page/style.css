@@ -806,21 +806,21 @@ footer .footer_mobile {
   }
   .main1 {
     width: 100vw;
-    height: 255vh;
+    height: 210vh;
     display: flex;
     justify-content: center;
     align-items: start;
   }
   .main1 .main1_all {
     width: 86vw;
-    height: 255vh;
+    height: 210vh;
     display: flex;
     flex-direction: column;
     gap: 2.5vh;
   }
   .main1 .main1_all .main1_block1 {
     width: 86vw;
-    height: 80vh;
+    height: 82vh;
     display: flex;
     flex-direction: column;
   }
@@ -833,7 +833,7 @@ footer .footer_mobile {
   }
   .main1 .main1_all .main1_block1 .main1_text .main1_p1 {
     order: 2;
-    width: 86vw;
+    width: 53vw;
     font-weight: 700;
     font-size: 1.625rem;
     line-height: 1.25;
@@ -857,7 +857,7 @@ footer .footer_mobile {
   }
   .main1 .main1_all .main1_block1 .main1_text .main1_p4 {
     order: 4;
-    width: 86vw;
+    width: 81vw;
     font-size: 0.9375rem;
     line-height: 25px;
     color: #272727;
@@ -880,7 +880,8 @@ footer .footer_mobile {
     width: 86vw;
     height: 66vh;
     display: flex;
-    flex-direction: column;
+    align-items: start;
+    flex-direction: column-reverse;
     gap: 2vh;
   }
   .main1 .main1_all .main1_block2 .main1_img_block {
@@ -897,7 +898,7 @@ footer .footer_mobile {
     border-radius: 6px;
   }
   .main1 .main1_all .main1_block2 .main1_p5 {
-    width: 86vw;
+    width: 81vw;
     height: 33vh;
     display: flex;
     align-items: start;
@@ -906,7 +907,13 @@ footer .footer_mobile {
     color: #272727;
   }
   .main1 .main1_all .main1_p6 {
-    display: none;
+    width: 81vw;
+    height: 33vh;
+    display: flex;
+    align-items: start;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    color: #272727;
   }
   .main1 .main1_all .main1_button {
     width: 86vw;
@@ -939,16 +946,16 @@ footer .footer_mobile {
   }
   footer {
     width: 100vw;
-    height: 126vh;
+    height: 140vh;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: end;
     flex-direction: column;
     background-color: #F9F9F9;
   }
   footer .footer_block1_all {
     width: 86vw;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1086,16 +1093,20 @@ footer .footer_mobile {
   }
   footer .footer_mobile {
     width: 100vw;
-    height: 8vh;
+    height: 11vh;
     display: flex;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 7vw;
     background-color: #6701BA;
+  }
+  footer .footer_mobile .footer_mobile_card {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
   }
   .footer_table {
     display: none;

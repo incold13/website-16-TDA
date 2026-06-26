@@ -978,6 +978,7 @@ footer {
                flex-direction: column;
                align-items: center;
                gap: 1.5vh;
+               text-align: center;
                a {
                   text-decoration: none;
                   color: #272727;
@@ -1085,7 +1086,7 @@ footer {
       }
       .footer_mobile {
          width: 100vw;
-         height: 11vh;
+         height: 8vh;
          display: flex;
          flex-direction: row;
          justify-content: center;
@@ -1093,11 +1094,15 @@ footer {
          gap: 7vw;
          background-color: #6701BA;
          .footer_mobile_card {
-            height: 7vh;
+            height: 5vh;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: end;
+            p {
+            color: #FFFFFF;
+            font-size: 0.75rem;
+         }
          }
       }
    }
@@ -1740,6 +1745,10 @@ footer {
       align-items: center;
       justify-content: center;
       gap: 7vw;
+      p {
+         color: #FFFFFF;
+         font-size: 0.75rem;
+      }
       }
    }
 }
